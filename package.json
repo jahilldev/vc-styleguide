@@ -1,0 +1,52 @@
+{
+   "name": "vouchercloud",
+   "version": "0.0.1",
+   "description": "Stencil Component Starter",
+   "main": "dist/index.js",
+   "module": "dist/index.mjs",
+   "es2015": "dist/esm/index.mjs",
+   "es2017": "dist/esm/index.mjs",
+   "types": "dist/types/index.d.ts",
+   "collection": "dist/collection/collection-manifest.json",
+   "collection:main": "dist/collection/index.js",
+   "unpkg": "dist/vouchercloud/vouchercloud.js",
+   "license": "MIT",
+   "scripts": {
+      "build": "stencil build --docs",
+      "start": "run-p start:stencil start:storybook",
+      "start:stencil": "stencil build --dev --watch",
+      "start:storybook": "start-storybook",
+      "test": "stencil test --spec --e2e",
+      "test.watch": "stencil test --spec --e2e --watchAll",
+      "generate": "stencil generate"
+   },
+   "files": [
+      "dist/",
+      "loader/"
+   ],
+   "dependencies": {
+      "@babel/core": "^7.8.4",
+      "babel-loader": "^8.0.6",
+      "preact": "^8.5.3"
+   },
+   "devDependencies": {
+      "@stencil/core": "^1.8.4",
+      "@stencil/sass": "^1.1.1",
+      "@storybook/addon-a11y": "^5.3.13",
+      "@storybook/addon-actions": "^5.3.13",
+      "@storybook/addon-backgrounds": "^5.3.13",
+      "@storybook/addon-jest": "^5.3.13",
+      "@storybook/addon-knobs": "^5.3.13",
+      "@storybook/addon-notes": "^5.3.13",
+      "@storybook/addon-options": "^5.3.13",
+      "@storybook/addon-viewport": "^5.3.13",
+      "@storybook/html": "^5.3.13",
+      "@storybook/preact": "^5.3.13",
+      "@types/node": "^13.7.1",
+      "copy-webpack-plugin": "^5.1.1",
+      "npm-run-all": "^4.1.5",
+      "prettier": "^1.19.1",
+      "webpack": "^4.41.6",
+      "write-file-webpack-plugin": "^4.5.1"
+   }
+}

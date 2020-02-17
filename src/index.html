@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+      />
+      <title>Local Search Component</title>
+
+      <link
+         href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500&display=swap"
+         rel="stylesheet"
+      />
+
+      <style>
+         body {
+            background: #f1f1f1;
+         }
+
+         .blue-bg {
+            background: #31b2d2;
+            padding: 20px 0;
+         }
+
+         .margin {
+            margin-bottom: 20px;
+         }
+
+         .container {
+            max-width: 1024px;
+            margin: 0 auto;
+         }
+
+         .button {
+            font-family: 'Muli', sans-serif;
+            font-size: 18px;
+            background: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            max-width: 140px;
+            margin: 0 auto;
+            cursor: pointer;
+            color: #50c3d8;
+         }
+      </style>
+
+      <script type="module" src="/build/vouchercloud.esm.js"></script>
+      <script nomodule src="/build/vouchercloud.js"></script>
+   </head>
+   <body>
+      <div class="blue-bg margin">
+         <div class="container">
+            <local-search
+               title-text="Find the Latest Deals Near You"
+               link-text="View our interactive map"
+               map-url="https://www.vouchercloud.com/local-vouchers"
+            ></local-search>
+         </div>
+      </div>
+      <div class="container margin">
+         <redemption-button
+            class="button"
+            offer-id="12345"
+            redirect-url="https://vouchercloud.com/"
+         >
+            Redeem Here
+         </redemption-button>
+      </div>
+      <div class="container">
+         <offer-block-tile>
+            <redemption-button
+               offer-id="12345"
+               redirect-url="https://vouchercloud.com/"
+            >
+               OFFER BLOCK
+            </redemption-button>
+         </offer-block-tile>
+      </div>
+   </body>
+</html>
