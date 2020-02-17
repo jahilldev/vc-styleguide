@@ -1,0 +1,62 @@
+/* -----------------------------------
+ *
+ * Breakpoints
+ *
+ * -------------------------------- */
+
+$screen-xs: 384px;
+$screen-sm: 568px;
+$screen-md: 768px;
+$screen-lg: 1024px;
+$screen-xl: 1366px;
+$screen-xxl: 1600px;
+$screen-xs-max: ($screen-sm - 1);
+$screen-sm-max: ($screen-md - 1);
+$screen-md-max: ($screen-lg - 1);
+$screen-lg-max: ($screen-xl - 1);
+
+/* -----------------------------------
+ *
+ * Media Query
+ *
+ * -------------------------------- */
+
+$media-xs: '(min-width: #{$screen-xs})';
+$media-xs-max: '(max-width: #{$screen-xs-max})';
+$media-sm: '(min-width: #{$screen-sm})';
+$media-sm-md: '(min-width: #{$screen-sm}) and (max-width: #{$screen-md-max})';
+$media-sm-max: '(max-width: #{$screen-sm-max})';
+$media-sm-only: '(min-width: #{$screen-sm}) and (max-width: #{$screen-sm-max})';
+$media-md: '(min-width: #{$screen-md})';
+$media-md-max: '(max-width: #{$screen-md-max})';
+$media-md-only: '(min-width: #{$screen-md}) and (max-width: #{$screen-md-max})';
+$media-md-lg: '(min-width: #{$screen-md}) and (max-width: #{$screen-lg-max})';
+$media-lg: '(min-width: #{$screen-lg})';
+$media-lg-max: '(max-width: #{$screen-lg-max})';
+$media-lg-only: '(min-width: #{$screen-lg}) and (max-width: #{$screen-lg-max})';
+$media-xl: '(min-width: #{$screen-xl})';
+$media-xxl: '(min-width: #{$screen-xxl})';
+
+/* -----------------------------------
+  *
+  * Breakpoints
+  *
+  * -------------------------------- */
+
+$screen-sizes: (
+   'xs': $media-xs,
+   'xs-max': $media-xs-max,
+   'sm': $media-sm,
+   'sm-md': $media-sm-md,
+   'sm-max': $media-sm-max,
+   'sm-only': $media-sm-only,
+   'md': $media-md,
+   'md-max': $media-md-max,
+   'md-only': $media-md-only,
+   'md-lg': $media-md-lg,
+   'lg': $media-lg,
+   'lg-max': $media-lg-max,
+   'lg-only': $media-lg-only,
+   'xl': $media-xl,
+   'xxl': $media-xxl,
+);

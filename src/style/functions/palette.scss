@@ -1,0 +1,9 @@
+/* -----------------------------------
+ *
+ * Functions
+ *
+ * -------------------------------- */
+
+@function palette($key) {
+   @return map-get($colours, $key);
+}

@@ -1,0 +1,25 @@
+/* -----------------------------------
+ *
+ * Fonts
+ *
+ * -------------------------------- */
+
+$typography: (
+   main: (
+      'Museo Sans',
+      'Open Sans',
+      'sans-serif',
+   ),
+   icons: 'vouchercloud',
+);
+
+/* -----------------------------------
+ *
+ * Sizes
+ *
+ * -------------------------------- */
+
+$font-size-calc: 16;
+$font-size-base: $font-size-calc * 1px;
+$font-size-body: 15;
+$font-height: 22;

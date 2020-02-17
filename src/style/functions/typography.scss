@@ -1,0 +1,9 @@
+/* -----------------------------------
+ *
+ * Typography
+ *
+ * -------------------------------- */
+
+@function typography($key) {
+   @return map-get($typography, $key);
+}

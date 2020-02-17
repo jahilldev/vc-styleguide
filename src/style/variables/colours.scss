@@ -1,0 +1,38 @@
+/* -----------------------------------
+ *
+ * Variables
+ *
+ * -------------------------------- */
+
+$colour-base-black: #000;
+$colour-brand-border: #bdbdbd;
+
+/* -----------------------------------
+ *
+ * Map
+ *
+ * -------------------------------- */
+
+$colours: (
+   base-white: #fff,
+   base-black: $colour-base-black,
+   base-grey: #cbcbcb,
+   base-grey-dark: #868585,
+   base-grey-darker: #4c4e4f,
+   base-blue-light: #eefafe,
+   alpha-black-75: rgba($colour-base-black, 0.75),
+   brand-primary: #1faed0,
+   brand-primary-bg: #f1fafc,
+   brand-secondary: #36557b,
+   brand-tertiary: #68d6d2,
+   brand-cta: #fc873c,
+   brand-accent: #f9c651,
+   brand-text: #2e3538,
+   brand-text-light: #9d9d9d,
+   brand-verified: #5cd7c4,
+   brand-verified-bg: #f6fdfc,
+   brand-background: #f7f7f7,
+   brand-inactive: #9c9c9c,
+   brand-border: $colour-brand-border,
+   brand-border-light: lighten($colour-brand-border, 5%),
+);
